@@ -79,6 +79,7 @@ body {
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
   transition: all .4s ease-in-out;
+  animation: saltarin 2s infinite;
 }
 
 
@@ -91,7 +92,7 @@ body {
 
 .buttons a:hover {
     transform: scale(1.2);
-  }
+}
 
 /* Fin Footer */
 
@@ -162,3 +163,5 @@ form{
     }
 }
 /* Fin Formulario */
+
+
