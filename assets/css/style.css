@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #6dc3f0;
+    background-image: linear-gradient(180deg, #6dc3f0 0%, #0a0a0a 100%);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+/* Footer */
+#pie{
+    background-color: white;
+}
+
+#menu_footer ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+#menu_footer ul li{
+    position: relative;
+    display: inline-block; 
+}
+
+
+#menu_footer ul li:hover ul li a{
+    
+}
+
+#menu_footer ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #0c0c0c;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+#menu_footer ul li a:hover{
+    color: #06edfd;
+    
+}
+
+@media (max-width:700px){
+    #menu_footer{
+        flex-direction: column;   
+    }
+
+    #menu_footer{
+        padding: 10px 0px;
+    }    
+}
+
+.buttons {
+  min-width: 700px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons a{
+  text-decoration: none;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #314652;
+  color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+@media (max-width:1200px){
+    .buttons {
+        display: none;
+    }
+      
+    
+}
+/* Fin Footer */
+
+/* Formulario registrarse */
+.form-registro{
+    width: 400px;
+    background: linear-gradient(to left , #161124 , #01a7ee  );
+    padding: 30px;
+    margin-left: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 7px 13px 37px #000;
+}
+
+form{
+    width: 100%;
+}
+
+.form-registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.controls{
+    width: 100%;
+    color: #2B86C5;
+    background-color: #161124;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #2B86C5;
+    font-family: 'Roboto', sans-serif ;
+    font-size: 18px;
+}
+
+.form-registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+     line-height: 40px;
+    
+}
+
+.form-registro .butons{
+    width: 100%;
+    background: linear-gradient(to right , #161124 , #01a7ee  );
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-registro .butons:hover {
+    color: #01a7ee  ;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 700px){
+    .form-registro{
+        margin: auto;
+        
+    }
+}
+/* Fin Formulario */
