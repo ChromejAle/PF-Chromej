@@ -81,13 +81,18 @@ body {
   transition: all .4s ease-in-out;
 }
 
+
+
 @media (max-width:1200px){
     .buttons {
         display: none;
     }
-      
-    
 }
+
+.buttons a:hover {
+    transform: scale(1.2);
+  }
+
 /* Fin Footer */
 
 /* Formulario registrarse */
