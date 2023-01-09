@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #6dc3f0;
+    background-image: $color-fondo ;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+/* Formulario registrarse */
+.form-registro{
+    width: 400px;
+    background: $color-fondo2;
+    padding: 30px;
+    margin-left: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 7px 13px 37px #000;
+}
+
+form{
+    width: 100%;
+}
+
+.form-registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.controls{
+    width: 100%;
+    color: #2B86C5;
+    background-color: #161124;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #2B86C5;
+    font-family: 'Roboto', sans-serif ;
+    font-size: 18px;
+}
+
+.form-registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+     line-height: 40px;
+    
+}
+
+.form-registro .butons{
+    width: 100%;
+    background: $color-fondo3;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-registro .butons:hover {
+    color: #01a7ee  ;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 700px){
+    .form-registro{
+        margin: auto;
+        
+    }
+}
+/* Fin Formulario */
