@@ -1,0 +1,23 @@
+{
+  "name": "trabajo.preentraga2.chromejalejandro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChromejAle/PreEntrega-2-Chromej.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChromejAle/PreEntrega-2-Chromej/issues"
+  },
+  "homepage": "https://github.com/ChromejAle/PreEntrega-2-Chromej#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
