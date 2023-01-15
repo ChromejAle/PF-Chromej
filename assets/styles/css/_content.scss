@@ -1,3 +1,5 @@
+@use '_commons' as c;
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 
 body {
     background-color: #6dc3f0;
-    background-image: $color-fondo ;
+    background-image: (c.$color-fondo) ;
     justify-content: center;
     align-items: center;
     
@@ -17,7 +19,7 @@ body {
 /* Formulario registrarse */
 .form-registro{
     width: 400px;
-    background: $color-fondo2;
+    background: (c.$color-fondo2);
     padding: 30px;
     margin-left: auto;
     margin-top: 10px;
@@ -43,7 +45,7 @@ body {
 
     .butons{
         width: 100%;
-        background: $color-fondo3;
+        background: (c.$color-fondo3);
         border: none;
         padding: 12px;
         color: white;
@@ -65,12 +67,12 @@ form{
 
 .controls{
     width: 100%;
-    color: $color-registro;
+    color: (c.$color-registro);
     background-color: #161124;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 10px;
-    border: 1px solid $color-registro;
+    border: 1px solid (c.$color-registro);
     font-family: 'Roboto', sans-serif ;
     font-size: 18px;
 }
@@ -95,7 +97,7 @@ form{
 
 
 .personajes{
-    padding: 0 10%;   
+    padding: 0 12%;   
     height: 100%;
     width: auto;
     min-height: 100vh;
@@ -116,7 +118,7 @@ form{
 
         h1{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 90px;
+            font-size: 80px;
             line-height: 1;
             color: white;
             margin: 0 0 45px;
@@ -168,11 +170,15 @@ form{
     }
 }
 
+
+
+
 @media (max-width: 700px){
+    
 
     .personajes{
-        margin: 10px;
-        padding: 0 2%;   
+        margin: auto;
+        padding: auto;   
         height: 100%;
         width: auto;
         min-height: 100vh;
@@ -182,20 +188,9 @@ form{
         align-items: center;
         gap: 1rem;
         
-        
-
-        .item-container{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-            align-content: flex-start;
-        }
-
         .personajes-text{
-            padding: 0 2%;   
-    
+
+
             .h5{
                 display: none;
             }
@@ -211,23 +206,12 @@ form{
         }
         .personajes-img{
             display: flex;
-            text-align: center;  
+            text-align: start;  
             img{
-                width: 400px;
+                width: 300px;
                 height: auto;
             }
         }   
     }
-
-    
-    
-
-    
-    
-
-    
-
-    
-
 }
 
