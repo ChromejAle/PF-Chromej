@@ -82,3 +82,142 @@ form{
     }
 }
 /* Fin Formulario */
+
+/* productos de inventario*/
+.producto{
+    margin: 30px;
+    padding: 50px;
+}
+
+
+/*personajes*/
+
+
+
+.personajes{
+    padding: 0 10%;   
+    height: 100%;
+    width: auto;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    .personajes-text{
+        
+        h5{
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 90px;
+            line-height: 1;
+            color: white;
+            margin: 0 0 45px;
+        }
+
+        h4{
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        p{
+            color: white;
+            font-size: 15px;
+            line-height: 1.9;
+            margin-bottom: 5px;
+            
+        }
+    }
+
+    .personajes-img{
+        width: 700px;
+                
+        :hover{
+            transform: scale(1.15);
+        }  
+    }
+
+    .item-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+        align-content: flex-start;
+ 
+        .item{
+            background-color: #0e0d0d;
+        }
+
+        p:hover{
+            color: cyan;
+            background: transparent;
+            border: 1px solid rgb(247, 5, 5);
+            transform: translateX(8px);
+        }
+
+    }
+}
+
+@media (max-width: 700px){
+    .personajes{
+        padding: 0 3%;
+        width: auto;
+        height: 50%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+
+        .item-container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .personajes-text{
+            padding-top: 40px;
+    
+            .h5{
+                display: none;
+            }
+            .h4{
+                display: none;
+            }
+            .h1{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 40px;
+                line-height: 1;  
+                text-align: center;
+            }           
+        }
+        .personajes-img{
+            text-align: center;  
+            img{
+                width: 300px;
+                height: auto;
+            }
+        }   
+    }
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+}
+
