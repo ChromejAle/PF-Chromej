@@ -5,6 +5,7 @@
 }
 
 body {
+  width: 100%;
   background-color: #6dc3f0;
   background-image: linear-gradient(180deg, #6dc3f0 0%, #0a0a0a 100%);
   justify-content: center;
@@ -82,9 +83,6 @@ form {
 .personajes {
   padding: 0 12%;
   height: 100%;
-  width: auto;
-  min-height: 100vh;
-  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -116,6 +114,8 @@ form {
   margin-bottom: 5px;
 }
 .personajes .personajes-img {
+  margin: 0;
+  padding: 0;
   width: 700px;
 }
 .personajes .personajes-img :hover {
@@ -139,18 +139,13 @@ form {
   transform: translateX(8px);
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .personajes {
-    margin: auto;
-    padding: auto;
-    height: 100%;
-    width: auto;
-    min-height: 100vh;
+    margin: 0 3%;
+    padding-top: 10px;
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
-    gap: 1rem;
   }
   .personajes .personajes-text .h5 {
     display: none;
