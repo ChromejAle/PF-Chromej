@@ -5,7 +5,6 @@
 }
 
 body {
-  width: 100%;
   background-color: #6dc3f0;
   background-image: linear-gradient(180deg, #6dc3f0 0%, #0a0a0a 100%);
   justify-content: center;
@@ -139,13 +138,19 @@ form {
   transform: translateX(8px);
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
   .personajes {
-    margin: 0 3%;
-    padding-top: 10px;
+    margin: auto;
+    padding: auto;
+    height: 100%;
+    width: auto;
+    min-height: 100vh;
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
+    align-items: center;
+    gap: 1rem;
+    line-height: 1.5;
   }
   .personajes .personajes-text .h5 {
     display: none;
@@ -162,10 +167,7 @@ form {
   .personajes .personajes-img {
     display: flex;
     text-align: start;
-  }
-  .personajes .personajes-img img {
-    width: 300px;
-    height: auto;
+    width: 100%;
   }
 }
 /* Footer */
