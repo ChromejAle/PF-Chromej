@@ -1,70 +1,167 @@
 @use '_commons' as c;
 
-/* Footer */
-#pie{
-    background-color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#menu_footer ul{
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
-    li{
-        position: relative;
-        display: inline-block; 
+#pie {
+    font-weight: 400;
+    background-color: #ededed;
+    
+}    
+
+.footer{
+    padding: 40px 0;
+
+    .social{
+        text-align: center;
+        padding: 25px;
+        color: #4b4c4d;
         a{
-            font-family: 'Roboto', sans-serif;
-            font-weight: 100;
-            color: #0c0c0c;
-            text-decoration: none;
-            font-size: 15px;
-            :hover{
-                color: #06edfd;
-            }
+            font-size: 24px;
+            color: inherit;
+            border: 1px solid #ccc;
+            width: 40px;
+            height: 40px;
+            line-height: 38px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 8px;
+            opacity: 0.75;    
+        }
+        :hover{
+            opacity: 0.9;
+            transform: scale(1.2); 
+            color:#2B86C5          
         }
     }
-}
-@media (max-width:700px){
-    #menu_footer{
-        flex-direction: column;   
-    }
+    
 
-    #menu_footer{
-        padding: 10px 0px;
-    }    
-}
-
-.buttons {
-  min-width: 700px;
-  display: flex;
-  justify-content: space-around;
-    a{
-        text-decoration: none;
-        font-size: 20px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
+    .list{
+        margin-top: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom:0 ;
         text-align: center;
-        background: #314652;
-        color: #ffffff;
-        border-radius: 50%;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-        transition: all .4s ease-in-out;
-        animation: saltarin 2s infinite;
-        
-        
+        a{
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        li{
+            display: inline-block;
+            padding: 0 15px;
+         
+        }
+        :hover{
+            opacity: 1;
+            color: #2B86C5;
+        }
     }
 
-    :hover {
-        transform: scale(1.2);
-    }  
+    .copyright{
+        margin-top: 15px;
+        text-align: center;
+        font-size: 13px;
+        color: #2B86C5;
+    }
+
 }
 
-@media (max-width:1200px){
-    .buttons {
-        display: none;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+// #pie{
+//     background-color: white;
+// }
+
+// #menu_footer ul{
+//     list-style: none;
+//     margin: 0%;
+//     padding: 0%;
+//     display: flex;
+//     min-height: 100vh;
+//     li{
+//         position: relative;
+//         display: inline-block; 
+//         a{
+//             font-family: 'Roboto', sans-serif;
+//             font-weight: 100;
+//             color: #0c0c0c;
+//             text-decoration: none;
+//             font-size: 15px;
+//             :hover{
+//                 color: #06edfd;
+//             }
+//         }
+//     }
+// }
+// @media (max-width:700px){
+//     #menu_footer{
+//         flex-direction: column;   
+//     }
+
+//     #menu_footer{
+//         padding: 10px 0px;
+//     }    
+// }
+
+// .buttons {
+//   min-width: 700px;
+//   display: flex;
+//   justify-content: space-around;
+//     a{
+//         text-decoration: none;
+//         font-size: 20px;
+//         width: 40px;
+//         height: 40px;
+//         line-height: 40px;
+//         text-align: center;
+//         background: #314652;
+//         color: #ffffff;
+//         border-radius: 50%;
+//         box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+//         transition: all .4s ease-in-out;
+//         animation: saltarin 2s infinite;
+        
+        
+//     }
+
+//     :hover {
+//         transform: scale(1.2);
+//     }  
+// }
+
+// @media (max-width:1200px){
+//     .buttons {
+//         display: none;
+//     }
+// }
 
 
 

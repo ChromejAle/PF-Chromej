@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -170,66 +170,71 @@ form {
     width: 100%;
   }
 }
-/* Footer */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #pie {
-  background-color: white;
+  font-weight: 400;
+  background-color: #ededed;
 }
 
-#menu_footer ul {
-  list-style: none;
-  margin: 0%;
-  padding: 0%;
+.footer {
+  padding: 40px 0;
 }
-#menu_footer ul li {
-  position: relative;
-  display: inline-block;
+.footer .social {
+  text-align: center;
+  padding: 25px;
+  color: #4b4c4d;
 }
-#menu_footer ul li a {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  color: #0c0c0c;
-  text-decoration: none;
-  font-size: 15px;
-}
-#menu_footer ul li a :hover {
-  color: #06edfd;
-}
-
-@media (max-width: 700px) {
-  #menu_footer {
-    flex-direction: column;
-  }
-  #menu_footer {
-    padding: 10px 0px;
-  }
-}
-.buttons {
-  min-width: 700px;
-  display: flex;
-  justify-content: space-around;
-}
-.buttons a {
-  text-decoration: none;
-  font-size: 20px;
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
   width: 40px;
   height: 40px;
-  line-height: 40px;
+  line-height: 38px;
+  display: inline-block;
   text-align: center;
-  background: #314652;
-  color: #ffffff;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  transition: all 0.4s ease-in-out;
-  -webkit-animation: saltarin 2s infinite;
-          animation: saltarin 2s infinite;
+  margin: 0 8px;
+  opacity: 0.75;
 }
-.buttons :hover {
+.footer .social :hover {
+  opacity: 0.9;
   transform: scale(1.2);
+  color: #2B86C5;
+}
+.footer .list {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer .list a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.footer .list li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.footer .list :hover {
+  opacity: 1;
+  color: #2B86C5;
+}
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #2B86C5;
 }
 
-@media (max-width: 1200px) {
-  .buttons {
-    display: none;
-  }
-}
+/* Footer */
 /* Fin Footer *//*# sourceMappingURL=main.css.map */
