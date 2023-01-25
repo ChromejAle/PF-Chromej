@@ -11,6 +11,34 @@ body {
   align-items: center;
 }
 
+/*Grid*/
+#contenedor {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto 100px auto auto;
+  grid-template-areas: "cabecera" "hero" "noticias" "contenido" "pie";
+}
+
+#cabecera {
+  grid-area: cabecera;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.noticias {
+  grid-area: noticias;
+}
+
+.noticias-contenido {
+  grid-area: contenido;
+}
+
+#pie {
+  grid-area: pie;
+}
+
 /* Formulario registrarse */
 .form-registro {
   width: 400px;
@@ -80,94 +108,96 @@ form {
 
 /*personajes*/
 .personajes {
-  padding: 0 12%;
+  margin: auto;
+  padding: 10px;
   height: 100%;
+  width: auto;
+  min-height: 100vh;
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+  line-height: 1.5;
 }
-.personajes .personajes-text h5 {
-  font-size: 14px;
-  font-weight: 400;
-  color: white;
-  margin-bottom: 40px;
+.personajes .personajes-text {
+  color: #ffffff;
+  text-align: center;
 }
 .personajes .personajes-text h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 80px;
-  line-height: 1;
-  color: white;
-  margin: 0 0 45px;
+  font-size: 40px;
+  line-height: 3;
+  text-align: center;
+  color: #000;
 }
 .personajes .personajes-text h4 {
-  font-size: 18px;
-  font-weight: 600;
   color: white;
-  margin-bottom: 10px;
 }
-.personajes .personajes-text p {
-  color: white;
+.personajes .personajes-text h5 {
+  padding: 10px;
+  color: rgb(56, 55, 55);
   font-size: 15px;
-  line-height: 1.9;
-  margin-bottom: 5px;
 }
 .personajes .personajes-img {
-  margin: 0;
-  padding: 0;
-  width: 700px;
-}
-.personajes .personajes-img :hover {
-  transform: scale(1.15);
-}
-.personajes .item-container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: baseline;
-  align-content: flex-start;
-}
-.personajes .item-container .item {
-  background-color: #0e0d0d;
-}
-.personajes .item-container p:hover {
-  color: cyan;
-  background: transparent;
-  border: 1px solid rgb(247, 5, 5);
-  transform: translateX(8px);
+  text-align: start;
+  width: 100%;
 }
 
-@media (max-width: 700px) {
+@media only screen and (min-width: 768px) {
   .personajes {
-    margin: auto;
-    padding: auto;
+    padding: 0 12%;
     height: 100%;
-    width: auto;
-    min-height: 100vh;
-    position: relative;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, auto);
     align-items: center;
-    gap: 1rem;
-    line-height: 1.5;
   }
-  .personajes .personajes-text .h5 {
-    display: none;
-  }
-  .personajes .personajes-text .h4 {
-    display: none;
-  }
-  .personajes .personajes-text .h1 {
+  .personajes .personajes-text h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+    font-size: 80px;
     line-height: 1;
-    text-align: start;
+    color: rgb(0, 0, 0);
+    margin: 0 0 45px;
+    text-align: center;
+  }
+  .personajes .personajes-text h4 {
+    color: white;
+  }
+  .personajes .personajes-text h5 {
+    color: rgb(56, 55, 55);
+  }
+  .personajes .personajes-text p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 5px;
+    text-align: center;
   }
   .personajes .personajes-img {
+    margin: 0;
+    padding: 0;
+    width: 1;
+  }
+  .personajes .personajes-img :hover {
+    transform: scale(1.15);
+  }
+  .personajes .item-container {
     display: flex;
-    text-align: start;
-    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .personajes .item-container .item {
+    background-color: #000000;
+  }
+  .personajes .item-container p:hover {
+    color: cyan;
+    background: transparent;
+    border: 1px solid rgb(247, 5, 5);
+    transform: translateX(8px);
   }
 }
 * {
@@ -234,7 +264,4 @@ form {
   text-align: center;
   font-size: 13px;
   color: #2B86C5;
-}
-
-/* Footer */
-/* Fin Footer *//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

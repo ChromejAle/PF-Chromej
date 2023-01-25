@@ -23,9 +23,11 @@
     <div id="contenedor">
         <!-- inicio header - cabecera -->
         <header id="cabecera">
-            <nav class="navbar navbar-expand-lg bg-dark">
+            <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-info logo" href="index.html"><img src="assets/img/logo.png" alt="logo" width="100px"></a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo.png" alt="Bootstrap" width="60" height="48">
+                    </a>
                     <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -52,9 +54,13 @@
                                 <a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item text-info link-dark" href="alabardaceles.html">Alabarda Celestial Invetrida</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item text-info link-dark" href="dedosdesakuna.html">Dedos de Sakuna</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item text-info link-dark" href="masacrademonios.html">Massacra Demonios</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item text-info link-dark" href="nichirinnegra.html">Nichirin Negra</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item text-info link-dark" href="prisionconfinadora.html">Prision Confinadora</a></li>
                                 </ul>
                             </li>
@@ -65,12 +71,16 @@
                                 <a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item text-info link-dark" href="makizenin.html">Maki Zenin</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item text-info link-dark" href="Nobara.html">Nobara Kugisaki</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item text-info link-dark" href="yuta.html">Yuta Okkotsu</a></li>
-                                    <li><a class="dropdown-item text-info link-dark" href="makizenin.html">Kasumi Miwa</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-info link-dark" href="miwa.html">Kasumi Miwa</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item text-info link-dark" href="fujiguro.html">Megumi Fushiguro</a></li>
                                 </ul>
-                            </li>
+                            </li>                      
                         </ul>                     
                     </div>
                 </div>
@@ -78,68 +88,60 @@
         </header>
         <!-- Fin Header - cabecera -->
     
-        <!-- formulario -->    
-        <section class="form-registro animated__animated animate__bounceIn">   
-            <form>
-                
-                <legend> <h4>Registrarse</h4> </legend><br>
-        
-                <label for="nombre_apellido"> <b>Nombre:</b></label>
-                <input type="text" name="nombre_apellido" id="nombre" placeholder="Nombre"class="controls"> <br> 
-                <label for="nombre:apellido"> <b>Apellido:</b></label>
-                <input type="text" name="nombre_apellido" id="apellido" placeholder="Apellido"class="controls"> <br>
-                 <label for="Email"> <b>Email:</b></label>
-                <input type="text" name="Email" id="Email" placeholder="Email"class="controls"> 
-                <input type="password" name="password" id="contraseña"   placeholder="Contraseña"class="controls">
-        
-                <p>Seleccione Preferencia</p>
-                <select name="Talle" class="butons">
-                    <option value="Manga">Manga</option>    
-                    <option value="Anime">Anime</option>
-                    <option value="Gamer">Gamer</option>
-                </select> <br> <br>
-        
-                <input type="submit" value="Reset" class="butons">
-                <input type="submit" value="Registrar" class="butons"> <br><br><br>
-        
-                
-            </form>
+        <!-- formulario --> 
+            <section class="form-registro animated__animated animate__bounceIn">   
+                <form>
+                    
+                    <legend> <h4>Registrarse</h4> </legend><br>
+            
+                    <label for="nombre_apellido"> <b>Nombre:</b></label>
+                    <input type="text" name="nombre_apellido" id="nombre" placeholder="Nombre"class="controls"> <br> 
+                    <label for="nombre:apellido"> <b>Apellido:</b></label>
+                    <input type="text" name="nombre_apellido" id="apellido" placeholder="Apellido"class="controls"> <br>
+                    <label for="Email"> <b>Email:</b></label>
+                    <input type="text" name="Email" id="Email" placeholder="Email"class="controls"> 
+                    <input type="password" name="password" id="contraseña"   placeholder="Contraseña"class="controls">
+            
+                    <p>Seleccione Preferencia</p>
+                    <select name="Talle" class="butons">
+                        <option value="Manga">Manga</option>    
+                        <option value="Anime">Anime</option>
+                        <option value="Gamer">Gamer</option>
+                    </select> <br> <br>
+            
+                    <input type="submit" value="Reset" class="butons">
+                    <input type="submit" value="Registrar" class="butons"> <br><br><br>
+            
+                    
+                </form>
 
-        </section>
+            </section>
+
         <!-- fin formulario --> 
 
         <!-- inicio footer - pie -->
-        <footer id="pie">
+        <footer id="pie"> 
+                
+            <section class="footer">
+                <div class="social">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+                </div>
 
-            <div class="container text-center">            
-                <div class="row align-items-center p-5">
-                    <div class="col">
-                        <nav id="menu_footer">
-                            <ul> 
-                                <li><a href="#" target="_blank" >Terminos del servicio</a></li>
-                               
-                                <li><a href="#" target="_blank" >Aviso legal</a></li>
-                                
-                                <li><a href="sobreNosotros.html" target="_blank" >Sobre nosotros</a></li>             
-                            </ul>
-                        </nav>
-                    </div>
+                <ul class="list"> 
+                    <li><a href="#" target="" >Terminos del servicio</a></li>                                    
+                    <li><a href="#" target="" >Aviso legal</a></li>                                       
+                    <li><a href="sobreNosotros.html" target="" >Sobre nosotros</a></li>             
+                </ul>
 
-                    <div class="col">
-                        <section class="buttons">
-                            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
-                            <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
-                            <a href="https://www.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
-                            <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
-                          </section>
-                        
-                    </div>
+                <div class="copyright">
+                    <h6>Trabajo para Coderhouse by Chromej Alejandro</h6> 
+                </div>
 
-                    <div class="col">
-                        <h6>Trabajo para Coderhouse by Chromej Alejandro</h6>
-                    </div>
-                </div>               
-            </div>                  
+
+            </section>                                 
         </footer>
         <!-- fin footer - pie -->
     </div>

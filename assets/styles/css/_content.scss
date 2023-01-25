@@ -14,9 +14,47 @@ body {
     
 }
 
+/*Grid*/
+
+#contenedor{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 100px auto auto; 
+    grid-template-areas: 
+
+    "cabecera"
+    "hero"
+    "noticias"
+    "contenido"
+    "pie"
+    
+    ;
+
+}
+
+#cabecera{
+    grid-area: cabecera;
+}
+
+.hero{
+    grid-area: hero;
+}
+
+.noticias{
+    grid-area: noticias;
+}
+
+.noticias-contenido{
+    grid-area: contenido;
+}
+
+#pie{
+    grid-area: pie;
+}
 
 
 /* Formulario registrarse */
+
 .form-registro{
     width: 400px;
     background: (c.$color-fondo2);
@@ -95,124 +133,122 @@ form{
 /*personajes*/
 
 
-
 .personajes{
-    padding: 0 12%;   
+    margin: auto;
+    padding: 10px;   
     height: 100%;
-    
-    
-   
+    width: auto;
+    min-height: 100vh;
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:1fr;
     align-items: center;
-    gap: 2rem;
-
-    .personajes-text{
+    gap: 1rem;
+    line-height: 1.5;
         
-        h5{
-            font-size: 14px;
-            font-weight: 400;
-            color: white;
-            margin-bottom: 40px;
-        }
+    .personajes-text{
+        color: #ffffff;
+        text-align: center;
 
         h1{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 80px;
-            line-height: 1;
-            color: white;
-            margin: 0 0 45px;
-        }
-
-        h4{
-            font-size: 18px;
-            font-weight: 600;
-            color: white;
-            margin-bottom: 10px;
-        }
-
-        p{
-            color: white;
-            font-size: 15px;
-            line-height: 1.9;
-            margin-bottom: 5px;
+            font-size: 40px;
+            line-height: 3;  
+            text-align: center;
+            color: #000;
             
-        }
-    }
-
-    .personajes-img{
-        margin: 0;
-        padding: 0;
-        width: 700px;
-                
-        :hover{
-            transform: scale(1.15);
-        }  
-    }
-
-    .item-container{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: baseline;
-        align-content: flex-start;
- 
-        .item{
-            background-color: #0e0d0d;
-        }
-
-        p:hover{
-            color: cyan;
-            background: transparent;
-            border: 1px solid rgb(247, 5, 5);
-            transform: translateX(8px);
-        }
-
-    }
-}
-
-
-
-
-@media (max-width: 700px){
-    
-
-    .personajes{
-        margin: auto;
-        padding: auto;   
-        height: 100%;
-        width: auto;
-        min-height: 100vh;
-        position: relative;
-        display: grid;
-        grid-template-columns:1fr;
-        align-items: center;
-        gap: 1rem;
-        line-height: 1.5;
-        
-        .personajes-text{
-
-
-            .h5{
-                display: none;
-            }
-            .h4{
-                display: none;
-            }
-            .h1{
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 40px;
-                line-height: 1;  
-                text-align: start;
-            }       
-                
-        }
-        .personajes-img{
-            display: flex;
-            text-align: start;  
-            width: 100%;
         }   
+        h4{
+            color: white;
+        }
+        h5{
+            padding: 10px;
+            color: rgb(56, 55, 55);
+            font-size: 15px;
+
+        }    
+                
     }
+    .personajes-img{
+        display: flex;
+        text-align: start;  
+        width: 100%;
+    }   
 }
+
+@media only screen and (min-width: 768px){
+    .personajes{
+        padding: 0 12%;   
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        
+    
+        .personajes-text{
+            
+    
+            h1{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 80px;
+                line-height: 1;
+                color: rgb(0, 0, 0);
+                margin: 0 0 45px;
+                text-align: center;
+            }
+            h4{
+                color: white;
+            }
+            h5{
+                color: rgb(56, 55, 55);
+
+            }
+    
+    
+            p{
+                color: white;
+                font-size: 15px;
+                line-height: 1.9;
+                margin-bottom: 5px;
+                text-align: center;
+                
+            }
+        }
+
+        
+    
+        .personajes-img{
+            margin: 0;
+            padding: 0;
+            width: 1;
+                    
+            :hover{
+                transform: scale(1.15);
+            }  
+        }
+    
+        .item-container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+     
+            .item{
+                background-color: #000000;
+            }
+    
+            p:hover{
+                color: cyan;
+                background: transparent;
+                border: 1px solid rgb(247, 5, 5);
+                transform: translateX(8px);
+            }
+    
+        }
+    }
+    
+}
+
 
