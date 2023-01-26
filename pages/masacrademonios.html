@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jujutsumanía - Sitio Web</title>
-    
+    <title>Jujutsumanía - Sitio Web</title>  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
@@ -13,20 +12,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/styles/css/main.css">
+    <link rel="stylesheet" href="../assets/styles/css/main.css">
     <link rel="icon" href="assets/img/logoico.ico">
 </head>
+
+
 <body>
 
-
-    <div id="contenedor">
+    <div id="contenedor"> 
         <!-- inicio header - cabecera -->
         <header id="cabecera">
             <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" alt="Bootstrap" width="60" height="48">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logo.png" alt="Bootstrap" width="60" height="48">
                     </a>
                     <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -37,7 +36,7 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
         
                             <li class="nav-item animated__animated animate__bounceIn ">
-                                <a class="nav-link active text-info link-light" aria-current="page" href="index.html">Inicio</a>
+                                <a class="nav-link active text-info link-light" aria-current="page" href="../index.html">Inicio</a>
                             </li>
         
                             <li class="nav-item animated__animated animate__bounceIn">
@@ -87,91 +86,27 @@
             </nav>
         </header>
         <!-- Fin Header - cabecera -->
-    
-
-        <!-- inicio tabla - productos -->
-        <section id="hero" class="table">
-            <div class="table-container">
-                <div class="table_row" >
-                    <div class="table_col" >
-
-                        <table class="table table-bordered table table-dark table-hover caption-top"  >
-                            <caption><h5 class=" text-black">Listado de elementos</h5></caption>
-                            <tr class="table-info">
-                                <th class="animated__animated animate__bounceIn">Nombre</th>
-                                <th class="animated__animated animate__bounceIn">Tipo</th>
-                                <th class="animated__animated animate__bounceIn">Mundo</th>
-                                <th class="animated__animated animate__bounceIn">Usuario</th>
-                            </tr>
-                
-                            <tr>
-                                <td>Dedos de Sakuna</td>
-                                <td>Objeto Maldito</td>
-                                <td>Jujutsu kaisen</td>
-                                <td> - </td>
-                            </tr>
-                
-                            <tr>
-                                <td>Prision Confinadora</td>
-                                <td>Objeto Maldito</td>
-                                <td>Jujutsu kaisen</td>
-                                <td> - </td>
-                            </tr>
-                
-                            <tr>
-                                <td>Massacra demonios</td>
-                                <td>Herramienta Maldita</td>
-                                <td>Jujutsu Kaisen</td>
-                                <td>Yuji Itadori</td>
-                            </tr>
-                
-                            <tr>
-                                <td>Nichirin Negra</td>
-                                <td>Espada Nichirin</td>
-                                <td>Kimetsu no Yaiba</td>
-                                <td>Kamado Tanjiro</td>
-                            </tr>
-                
-                            <tr>
-                                <td>Alabarda Celestial Invertida</td>
-                                <td>Herramienta maldita</td>
-                                <td>Jujutsu kaisen</td>
-                                <td>Toji Fushiguro</td>
-                            </tr>
-                            
-                            <tr>
-                                <td>Útero Maldito</td>
-                                <td>Maldicion</td>
-                                <td>Jujutsu kaisen</td>
-                                <td>Sakuna</td>
-                            </tr> 
-                            
-                            <tr>
-                                <td>Cadena de Mil Millas</td>
-                                <td>Herramienta maldita</td>
-                                <td>Jujutsu kaisen</td>
-                                <td>Toji Fushiguro</td>
-                            </tr>  
-
-                            <tr>
-                                <td>Nube Itinerante</td>
-                                <td>Herramienta maldita</td>
-                                <td>Jujutsu kaisen</td>
-                                <td>Maki Zenin</td>
-                            </tr>  
-
-                            <tr>
-                                <td>Celular de Nanako</td>
-                                <td>Tipo Desconocido</td>
-                                <td>Jujutsu kaisen</td>
-                                <td>Nanako Hasaba</td>
-                            </tr> 
-                        </table> 
+        
+        <!-- inicio de producto -->
+        <div class="producto">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">            
+                <div class="card text-bg-dark border-info" style="width: 18rem;">
+                    <img src="../assets/img/Masacra_Demonios.webp" class="card-img-top animated__animated animate__bounceIn" alt="Masacra demonios">
+                    <div class="card-body">
+                    <h5 class="card-title text-center">Masacra demonios</h5>
+                    <p class="card-text">Masacra Demonios: es una herramienta maldita de tipo ofensivo. Fue un arma utilizada para exorcizar maldiciones. Fue destruida por una maldición de grado especial. Usos: Masacra Demonios es un tipo de espada que consiste en una daga afilada con dos agujeros en la punta de la hoja. El mango de la espada se encuentra envuelta por un tipo de vendaje y algo de piel. Se desconoce las capacidades completas de la herramienta. Sin embargo, es lo suficientemente efectiva contra espíritus malditos de bajo rango.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <a href="#" class="btn btn-info">Comprar</a>
+                            <a href="#" class="btn btn-info">Tradear</a>
+                            <a href="#" class="btn btn-info">Vender</a>
                     </div>
-                </div>                  
-            </div>    
-        </section> 
-        <!-- inicio tabla - productos -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- fin Prodicto - hero -->
+
 
         <!-- inicio footer - pie -->
         <footer id="pie"> 
@@ -198,11 +133,14 @@
             </section>                                 
         </footer>
         <!-- fin footer - pie -->
+        
     </div>
+
+
+
 
     <!-- javascript link bootsrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
-   
+      
 </body>
 </html>
